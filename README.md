@@ -1,54 +1,65 @@
-# React + TypeScript + Vite
+# 🔐 PassWiz – Your Own Password Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **PassWiz**, a beginner-friendly password manager developed as part of my web development learning journey. PassWiz allows you to securely store and manage your passwords locally using your browser's storage.
 
-Currently, two official plugins are available:
+> ⚠️ For learning purposes only – no server-side security implemented yet.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📦 Store passwords using **LocalStorage**
+- 🔍 View saved credentials
+- ❌ Delete passwords with one click
+- 🎨 Clean and minimal UI
+- ⚡ Lightweight and works offline
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🛠️ Tech Stack Used
+- React 
+- TypeScript
+- TailwindCSS
+
+## 🚀 Getting Started
+
+
+```bash
+git clone https://github.com/zapwiz22/PassWiz---Your-own-Password-Manager.git
+
+cd PassWiz---Your-own-Password-Manager
+
+npm i
+
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📌 Limitations
+Since this is a learning project, note the following:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- ❌ No encryption implemented
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- ❌ No authentication/authorization
+
+- ❌ Data stored only locally in the browser (vulnerable to anyone using the same device)
+
+
+
+## 📅 Future Plans
+I’m planning to take this project to the next level:
+
+- 🔐 Add user authentication and authorization
+
+- 🗄️ Store passwords in a secure MongoDB database
+
+- 🔒 Implement encryption for password storage
+
+- 🧑‍💻 Build a backend using Node.js & Express
+
+- 📱 Make it responsive for mobile devices
+
+- 🧪 Add unit tests and basic error handling
+
+## 🤝 Contributing
+Want to contribute, suggest features, or report bugs? Feel free to fork the repo and create a PR!
+
+> **Made with ❤️ while learning web dev.**
