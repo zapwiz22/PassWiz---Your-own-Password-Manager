@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+.mycontainer {
+  container-type: inline-size;
+  padding-left: theme(spacing.40);
+  padding-right: theme(spacing.40);
+  padding-top: theme(spacing.10);
+  padding-bottom: theme(spacing.10);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  font-family: "JetBrains Mono","monospace";
+}
